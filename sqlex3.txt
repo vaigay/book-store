@@ -1,0 +1,16 @@
+CREATE TABLE account (
+id int(3) NOT NULL AUTO_INCREMENT,
+    username varchar(20) NOT NULL,
+    password varchar(20) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (id_customer) REFERENCES customer(id)
+);
+CREATE TABLE book (
+	id int(3) NOT NULL AUTO_INCREMENT,
+    name varchar(20) NOT NULL,
+    author varchar(20) NOT NULL,
+    author varchar(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO `customer`(`name`, `country`, `city`, `detail`) VALUES ("Hai","Viet Nam","Ha Noi","La Khe")
+INSERT INTO `book`( `name`, `author`, `price`) VALUES ("Bo gia","Mario Puzo","650.5");
